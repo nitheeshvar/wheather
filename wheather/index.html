@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="own">
+      <h1 class="myin"><span>WELCOME TO OUR</span> WHEATHER APP</h1>
+    </div>
+    <div class="container">
+      <div class="search">
+        <input
+          class="search-city"
+          type="text"
+          placeholder="Enter a city name"
+        />
+        <img class="img-search" src="./images/search.png" alt="search-icon" />
+      </div>
+      <div class="error erase">Invalid City name</div>
+      <div class="weather erase">
+        <img
+          class="weather-image"
+          src="./images/Clouds.png"
+          alt="weather-image"
+        />
+        <h1 class="temp">27°C</h1>
+        <h2 class="city">Thanjavur</h2>
+        <div class="wind">
+          <div class="humidity-container">
+            <img src="./images/humidity.png" alt="humidity-img" />
+            <div class="humidity">
+              <p>Humidity:</p>
+              <p class="humidity-info">50%</p>
+            </div>
+          </div>
+          <div class="speed-container">
+            <img src="./images/wind.png" alt="wind-img" />
+            <div class="speed">
+              <p>wind-Speed:</p>
+              <p class="speed-info">4km/hr</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

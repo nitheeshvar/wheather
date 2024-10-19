@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg ,navy,pink);
+    padding:50px 35%;
+}
+
+.container{
+    width:450px;
+    background-color: aqua;
+    padding:5%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.search{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.search input{
+    width:80%;
+    height:40px;
+    border-radius: 10px;
+    padding:5%;
+    font-size: 30px;
+}
+.search img{
+    width:50px;
+    height:45px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.weather{
+    display: flex;
+    flex-flow: column nowrap;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wind{
+    display: flex;
+    justify-content: space-between;
+    gap:100px;
+}
+p{
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+}
+.weather img{
+    animation-name: scroll;
+    animation-duration: 3s;
+}
+@keyframes scroll{
+    0%{
+        /* rotate: 45deg; */
+        opacity: 1;
+        scale: 0.2;
+        transform: matrix3d(180deg);
+
+    }
+    10%{
+        /* rotate: 90deg; */
+        opacity: 0.5;
+        scale: 0.5;
+        transform: rotateY(90deg);
+    }
+    50%{
+        rotate:180deg ;
+        opacity: 0.9;
+        scale: 0.9;
+        transform: rotateY(180deg);
+    }
+    100%{
+        /* rotate: 360deg; */
+        opacity: 1;
+        scale: 1;
+        transform: rotateY(360deg);
+    }
+}
+.myin{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: fuchsia;
+}
+.own{
+    text-align: center;
+}
+.rad{
+    border-radius: 60px;
+}
+span{
+    color:gold;
+}
+
+.erase{
+    display: none;
+}
